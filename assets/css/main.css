@@ -3,23 +3,28 @@ body{
     font-family: var(--mainFont);
     background-color: #eee;
 }
+.menu{
+    display: none;
+}
 .header{
     background-color: #fff;
     padding: 20px 0;
 }
 .header .logo{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 3px;
 }
-.logo img{
+.header .logo img{
     width: 30px;
 }
-.logo a{
+.header .logo a{
     color: var(--mainColor);
 }
 .header .nav ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .header .nav ul li a{
@@ -30,6 +35,7 @@ body{
 }
 .auth{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .auth a{
@@ -46,4 +52,26 @@ body{
 .auth .register{
     color: #fff;
     background-color: var(--mainColor);
+}
+/* media header  */
+@media screen and (max-width:992px){
+    .nav,
+    .auth{
+        display: none;
+    }
+    .menu{
+        display: block;
+        order: 1;
+    }
+}
+@media screen and (max-width:567px){
+    .container {
+        width: calc(100% - 50px);
+    }
+    .header .logo img{
+        width: 20px;
+    }
+    .header .logo a{
+      font-size: 14px;
+    }
 }
