@@ -1,77 +1,191 @@
 @import './base.css';
-body{
+
+body {
     font-family: var(--mainFont);
     background-color: #eee;
 }
-.menu{
+
+.menu {
     display: none;
 }
-.header{
+
+.header {
     background-color: #fff;
     padding: 20px 0;
 }
-.header .logo{
+
+.header .logo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 3px;
+    gap: 5px;
 }
-.header .logo img{
+
+.header .logo img {
     width: 30px;
 }
-.header .logo a{
+
+.header .logo a {
     color: var(--mainColor);
+    font-family: Roboto;
 }
-.header .nav ul{
+
+.header .nav ul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.header .nav ul li a{
-    color:#101928;
+
+.header .nav ul li a {
+    color: #101928;
 }
-.active{
+
+.active {
     font-weight: 900;
 }
-.auth{
+
+.auth {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.auth a{
-  border: 2px solid var(--mainColor);
-  font-family: var(--subFont);
-  padding: 8px 30px;
-  border-radius: 5px;
+
+.auth a {
+    border: 2px solid var(--mainColor);
+    font-family: var(--subFont);
+    padding: 8px 30px;
+    border-radius: 5px;
 
 }
-.auth .login{
+
+.auth .login {
     color: var(--mainColor);
     font-weight: 700;
 }
-.auth .register{
+
+.auth .register {
     color: #fff;
     background-color: var(--mainColor);
 }
-/* media header  */
-@media screen and (max-width:992px){
+
+/* media header */
+@media screen and (max-width:992px) {
+
     .nav,
-    .auth{
+    .auth {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: block;
-        order: 1;
     }
 }
-@media screen and (max-width:567px){
+
+@media screen and (max-width:576px) {
     .container {
         width: calc(100% - 50px);
     }
-    .header .logo img{
+
+    .header .logo img {
         width: 20px;
     }
-    .header .logo a{
-      font-size: 14px;
+
+    .header .logo a {
+        font-size: 14px;
+    }
+}
+
+.footer {
+    background-color: #393E46;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer-left-side {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+
+.footer-left-side .logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-left-side .logo img {
+    width: 30px;
+}
+
+.footer-left-side a {
+    font-family: Roboto;
+}
+
+.footer-left-side .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-left-side .icons img {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+.footer-right-side {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-right-side .footer-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-right-side .footer-item nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* media header */
+@media screen and (max-width:1200px) {
+
+    .footer-left-side,
+    .footer-right-side {
+        width: 100%;
+    }
+
+    .footer .row {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer-item {
+        width: calc(50% - 10px);
+    }
+
+    .footer-right-side {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .footer-item {
+        width: 100%;
+        text-align: center;
     }
 }
