@@ -95,13 +95,133 @@ body {
     }
 }
 
-.testimonials {
+.courses {
     padding: 50px 0;
+}
+
+.courses .row {
+    gap: 40px;
+}
+
+.course-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: calc((100% - 40px) / 2);
+}
+
+.course-item {
+    width: calc((100% - 20px) / 2);
+}
+
+.course img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    filter: brightness(0.7);
+}
+
+.course-card {
+    position: relative;
+}
+
+
+.course-info {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15px 15px 15px 0;
+    box-sizing: border-box;
+}
+
+.course-info span {
+    font-weight: 700;
+    font-family: var(--mainFont);
+}
+
+.course-info span:nth-child(1) {
+    background-color: var(--mainColor);
+    font-size: 12px;
+    align-self: flex-start;
+    padding: 5px;
+}
+
+.course-info span:nth-child(2) {
+    align-self: flex-end;
+}
+
+.course-description {
+    background-color: #fff;
+    padding: 20px 10px;
+}
+
+.course-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--mainFont);
+}
+.course-title h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.course-title span {
+    color: var(--mainColor);
+    font-size: 10px;
+}
+.course-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    font-family: var(--mainFont);
+}
+.course-content span {
+    color: #969696;
+    font-size: 12px;
+}
+
+.course-right {
+    width: calc((100% - 40px) / 2);
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+.course-right span:nth-child(1) {
+    color: var(--mainColor);
+    font-family: var(--subFont);
+}
+.course-right h2{
+    font-family: var(--mainFont);
+    font-size: 30px;
+}
+.course-right p{
+    font-family: var(--mainFont);
+color: #969696;
+}
+.course-right a{
+    color: #fff;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    font-family: var(--subFont);
+    padding: 8px 30px;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+.testimonials {
+    padding: 40px 0;
 }
 
 .testimonials .row {
     gap: 40px;
-
 }
 
 .testimonial {
