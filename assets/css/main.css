@@ -95,6 +95,79 @@ body {
     }
 }
 
+.statistics {
+    padding: 50px 0;
+    background: linear-gradient(180deg, #545be8 0%, #272db0 100%);
+}
+
+.statistics .row {
+  gap: 50px;
+}
+
+.statistics-left {
+    width: calc(35% - 50px);
+}
+
+.statistics-left img {
+   width: 100%;
+   height: 100%;
+}
+
+.statistics-right {
+   width: calc(60% - 50px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.statistics-description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.statistics-right .statistics-right-top {
+    color: #F0C932;
+    font-family: var(--subFont);
+    font-weight:300;
+}
+
+.statistics-right h2 {
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: 30px;
+}
+
+.statistics-right p {
+    color: #DDDD;
+    font-family: var(--mainFont);
+}
+.statistic span{
+    font-family: var(--subFont);
+}
+.statistic span:nth-child(1){
+    color: #F0C932;
+    font-weight: 700;
+    font-size: 20px;
+}
+.statistic span:nth-child(2){
+color: #fff;
+}
+
+.statistics-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.statistics-info .statistic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .courses {
     padding: 50px 0;
 }
@@ -228,20 +301,23 @@ body {
 
 /* media courses */
 @media screen and (max-width:1200px) {
+
     .course-left,
     .course-right {
         width: 100%;
     }
-    
+
 }
 
 @media screen and (max-width:576px) {
-   
+
     .course-item {
-        width: calc((100% - 20px) );
+        width: 100%;
     }
-    
+
 }
+
+
 
 .testimonials {
     padding: 40px 0;
