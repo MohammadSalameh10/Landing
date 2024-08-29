@@ -168,6 +168,41 @@ color: #fff;
     justify-content: center;
     align-items: center;
 }
+
+/* media statistics */
+@media screen and (max-width:992px) {
+    
+        .statistics-left,
+        .statistics-right {
+            width: 100%;
+        }
+        .statistics-left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .statistics-right{
+            align-items: center;
+            justify-content: center;
+        }
+}
+
+@media screen and (max-width:576px) {
+    .statistics-info{
+        flex-direction: column;
+        gap: 20px;
+    }
+ 
+}
+
+
+
+
+
+
+
+
+
 .courses {
     padding: 50px 0;
 }
