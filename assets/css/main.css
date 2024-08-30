@@ -69,7 +69,6 @@ body {
 
 /* media header */
 @media screen and (max-width:992px) {
-
     .nav,
     .auth {
         display: none;
@@ -179,7 +178,6 @@ body {
 
 /* media interface */
 @media screen and (max-width:992px) {
-
     .interface-left,
     .interface-right {
         width: 100%;
@@ -193,9 +191,6 @@ body {
 
 @media screen and (max-width:768px) {
     .interface-left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
     }
 
@@ -212,6 +207,8 @@ body {
     @media screen and (max-width:400px) {
         .interface-left-item {
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
@@ -265,7 +262,6 @@ body {
     padding: 30px 10px;
     box-sizing: border-box;
     border-radius: 5px;
-
 }
 
 .content-item img {
@@ -305,7 +301,6 @@ body {
 }
 
 @media screen and (max-width:768px) {
-
     .content-left,
     .content-right {
         width: 100%;
@@ -322,6 +317,12 @@ body {
     }
 }
 
+@media screen and (max-width:400px){
+    .content-left{
+        text-align: center;
+    }
+}
+
 .statistics {
     padding: 50px 0;
     background: linear-gradient(180deg, #545be8 0%, #272db0 100%);
@@ -333,6 +334,8 @@ body {
 
 .statistics-left {
     width: calc(35% - 50px);
+    display: flex;
+    justify-content: center;
 }
 
 .statistics-left img {
@@ -401,21 +404,28 @@ body {
 
 /* media statistics */
 @media screen and (max-width:992px) {
-
     .statistics-left,
     .statistics-right {
         width: 100%;
     }
 
-    .statistics-left {
+    .statistics-left img{
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .statistics-right {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
-    .statistics-right {
-        align-items: center;
-        justify-content: center;
+    .statistics-left img {
+        display: none;
     }
 }
 
@@ -424,7 +434,6 @@ body {
         flex-direction: column;
         gap: 20px;
     }
-
 }
 
 .courses {
@@ -559,22 +568,23 @@ body {
 
 /* media courses */
 @media screen and (max-width:1200px) {
-
     .course-left,
     .course-right {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width:576px) {
-
     .course-item {
         width: 100%;
     }
-
+    .course-right{
+        text-align: center;
+    }
+    .course-right a {
+        align-self: center;
+    }
 }
-
 
 .testimonials {
     padding: 40px 0;
@@ -728,7 +738,6 @@ body {
 
 /* media header */
 @media screen and (max-width:1200px) {
-
     .footer-left-side,
     .footer-right-side {
         width: 100%;
@@ -752,6 +761,10 @@ body {
 @media screen and (max-width:400px) {
     .footer-item {
         width: 100%;
+        text-align: center;
+    }
+    .footer-left-side{
+        align-items: center;
         text-align: center;
     }
 }
