@@ -55,7 +55,6 @@ body {
     font-family: var(--subFont);
     padding: 8px 30px;
     border-radius: 5px;
-
 }
 
 .auth .login {
@@ -94,6 +93,84 @@ body {
         font-size: 14px;
     }
 }
+
+.interface {
+    padding: 50px 0;
+}
+
+.interface .row {
+    gap: 40px;
+}
+
+.interface-left {
+    width: calc(60% - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.interface-left span {
+    font-family: var(--subFont);
+    color: var(--mainColor);
+}
+
+.interface-left h1 {
+    font-family: var(--mainFont);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.interface-left p {
+    font-family: var(--mainFont);
+    color: #969696;
+}
+
+.interface-left-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.interface-left-item .register{
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    font-family: var(--subFont);
+    padding: 8px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.interface-left-item .register a{
+    color: #fff;
+}
+.interface-left-item .video {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+.interface-left-item .video img {
+    width: 10px;
+    height: 10px;
+    background-color:#F0C932;
+    border-radius: 50%;
+    padding: 10px;
+}
+.interface-left-item .video a{
+    color: #141E32;
+    font-weight: 700;
+    font-family: var(--subFont);
+}
+.interface-right {
+    width: calc(40% - 40px);
+    display: flex;
+    justify-content: center;
+}
+
+.interface-right img {
+    width: 100%;
+    height: 100%;
+}
+
 
 
 .contents {
