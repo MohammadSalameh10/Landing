@@ -10,8 +10,10 @@ body {
 }
 
 .header {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #fff;
     padding: 20px 0;
+    opacity: 0.9;
 }
 
 .header .logo {
@@ -67,7 +69,7 @@ body {
     background-color: var(--mainColor);
 }
 
-/* media header */
+/*  start media header */
 @media screen and (max-width:992px) {
     .nav,
     .auth {
@@ -92,9 +94,11 @@ body {
         font-size: 14px;
     }
 }
+/* end media header */
 
 .interface {
     padding: 50px 0;
+    background-color: #fff;
 }
 
 .interface .row {
@@ -152,8 +156,8 @@ body {
 }
 
 .interface-left-item .video img {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: #F0C932;
     border-radius: 50%;
     padding: 10px;
@@ -176,7 +180,7 @@ body {
     height: 100%;
 }
 
-/* media interface */
+/* start media interface */
 @media screen and (max-width:992px) {
     .interface-left,
     .interface-right {
@@ -197,6 +201,10 @@ body {
     .interface-right {
         display: none;
     }
+
+    .interface-left-item {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -212,6 +220,7 @@ body {
         }
     }
 }
+/* end media interface */
 
 .contents {
     padding: 100px 0;
@@ -284,7 +293,7 @@ body {
     color: #DDDD;
 }
 
-/* media header */
+/* start media contents */
 @media screen and (max-width:1400px) {
     .content-left {
         width: calc(25% - 30px);
@@ -317,11 +326,12 @@ body {
     }
 }
 
-@media screen and (max-width:400px){
-    .content-left{
+@media screen and (max-width:400px) {
+    .content-left {
         text-align: center;
     }
 }
+/* end media contents */
 
 .statistics {
     padding: 50px 0;
@@ -402,18 +412,17 @@ body {
     align-items: center;
 }
 
-/* media statistics */
+/* start media statistics */
 @media screen and (max-width:992px) {
     .statistics-left,
     .statistics-right {
         width: 100%;
     }
 
-    .statistics-left img{
+    .statistics-left img {
         width: 500px;
         height: 500px;
     }
-
 }
 
 @media screen and (max-width:768px) {
@@ -435,9 +444,11 @@ body {
         gap: 20px;
     }
 }
+/* end media statistics */
 
 .courses {
     padding: 50px 0;
+    background-color: #fff;
 }
 
 .courses .row {
@@ -460,6 +471,8 @@ body {
     height: 100%;
     display: flex;
     filter: brightness(0.7);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .course-card {
@@ -496,8 +509,12 @@ body {
 }
 
 .course-description {
-    background-color: #fff;
     padding: 20px 10px;
+    background-color: #fff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    opacity: 0.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .course-title {
@@ -516,7 +533,6 @@ body {
 .course-title span {
     color: var(--mainColor);
     font-size: 10px;
-
 }
 
 .course-content {
@@ -566,7 +582,7 @@ body {
     align-self: flex-start;
 }
 
-/* media courses */
+/* start media courses */
 @media screen and (max-width:1200px) {
     .course-left,
     .course-right {
@@ -578,16 +594,20 @@ body {
     .course-item {
         width: 100%;
     }
-    .course-right{
+
+    .course-right {
         text-align: center;
     }
+
     .course-right a {
         align-self: center;
     }
 }
+/* end media courses */
 
 .testimonials {
     padding: 40px 0;
+    background-color: #fff;
 }
 
 .testimonials .row {
@@ -664,12 +684,13 @@ body {
     gap: 5px;
 }
 
-/* media testimonials */
+/* start media testimonials */
 @media screen and (max-width:768px) {
     .testimonial {
         width: 100%;
     }
 }
+/* end media testimonials */
 
 .footer {
     background-color: #393E46;
@@ -736,7 +757,7 @@ body {
     flex-direction: column;
 }
 
-/* media header */
+/* start media footer */
 @media screen and (max-width:1200px) {
     .footer-left-side,
     .footer-right-side {
@@ -763,8 +784,10 @@ body {
         width: 100%;
         text-align: center;
     }
-    .footer-left-side{
+
+    .footer-left-side {
         align-items: center;
         text-align: center;
     }
 }
+/* end media footer */
